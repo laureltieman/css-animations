@@ -1,0 +1,89 @@
+/* this is where all of your CSS styles go */
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#grid_container {
+	width: 400px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+	margin-top: -150px;
+	margin-left: -200px;
+}
+
+.letter {
+	font-family: 'Cutive Mono', monospace;
+	font-size: 6em;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes l_move{
+	0%, 100%  { right: 0px; transform: rotate(0deg);}
+	50% { right: -130px; transform: rotate(360deg);}
+}
+
+#l {
+	position: relative;
+	animation: l_move 4s infinite;
+	animation-delay: 1s;
+	transform-origin: 50% 100%;
+}
+
+@keyframes a_move{
+	0%, 100% { left: 0px;}
+	50% { left: -50px;}
+}
+
+#a {
+	position: relative;
+	animation: a_move 4s infinite;
+	animation-delay: 1s;
+}
+
+@keyframes u_move{
+	0%, 100% { right: 0px; font-size: 6em;}
+	50% { right: -60px; font-size: 5em;}
+}
+
+#u {
+	position: relative;
+	animation: u_move 4s infinite;
+	animation-delay: 1s;
+}
+
+@keyframes r_move{
+	0%, 100% { right: 0px;}
+	50% { right: -60px;}
+}
+
+#r {
+	position: relative;
+	animation: r_move 4s infinite;
+	animation-delay: 1s;
+}
+
+@keyframes e_move{
+	0%, 100% { right: 0px; color: black;}
+	50% { right: -60px; color: red;}
+}
+
+#e {
+	position: relative;
+	animation: e_move 4s infinite;
+	animation-delay: 1s;
+}
+
+@keyframes l2_move{
+	0%, 100% { left: 0px;}
+	50% { left: -240px;}
+}
+
+#l2 {
+	position: relative;
+	animation: l2_move 4s infinite;
+	animation-delay: 1s;
+}
